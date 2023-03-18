@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>정찬진 자기소개 페이지</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tablet-container">
+        <div class="header-conatiner">
+          <div class="header-content">오전 11:11</div>
+          <div class="header-content">3월 17일 (금)</div>
+          <div class="header-content">5G</div>
+          <div class="header-content">100%</div>
+          <div class="header-content">
+            <img src="./images/battery.jpeg" alt="battery" />
+          </div>
+        </div>
+        <!-- Photo 섹션 -->
+        <div class="body-container" id="photo" style="display: none">
+          <p>2023/01/16<br>부산시</p>
+          <div class="body-content1"><img class="img" src="./images/photo_page/photo1.jpeg" alt=""></div>
+          <div class="body-content1"><img class="img" src="./images/photo_page/photo2.jpeg" alt=""></div>
+          <div class="body-content1"><img class="img" src="./images/photo_page/photo3.jpeg" alt=""></div>
+          <div class="body-content1"><img class="img" src="./images/photo_page/photo4.jpeg" alt=""></div>
+          <p>2022/11/24<br>제주시</p>
+          <div class="body-content1"><img src="./images/12.jpg" alt=""></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <p>2022/11/24<br>제주시</p>
+          <div class="body-content1"><img src="./images/12.jpg" alt=""></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <button class="body-btn" id="photo" onclick="hidePhoto()">X</button>
+        </div>
+        <!-- Memo 섹션 -->
+        <div class="body-container" id="memo" style="display: none">
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <button class="body-btn" id="memo" onclick="hideMemo()">X</button>
+        </div>
+        <!-- Music 섹션 -->
+        <div class="body-container" id="music" style="display: none">
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <div class="body-content1"></div>
+          <button class="body-btn" id="music" onclick="hideMusic()">X</button>
+        </div>
+        <!-- Map 섹션 -->
+				<div class="body-container" id="map" style="display: none">
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<button class="body-btn" id="map" onclick="hideMap()">X</button>
+				</div>
+        <!-- Movie 섹션 -->
+				<div class="body-container" id="movie" style="display: none">
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<div class="body-content1"></div>
+					<button class="body-btn" id="movie" onclick="hideMovie()">X</button>
+				</div>
+        <div class="footer">
+          <ul>
+            <li>
+              <img
+                class="footer-img"
+                src="./images/venus.png"
+                alt="sun"
+                onclick="showPhoto()"
+              />
+              <div class="footer-ex">Photos</div>
+            </li>
+            <li>
+              <img
+                class="footer-img"
+                src="./images/moon.png"
+                alt="venus"
+                onclick="showMemo()"
+              />
+              <div class="footer-ex">Memo</div>
+            </li>
+            <li>
+              <img
+                class="footer-img"
+                src="./images/earth.png"
+                alt="earth"
+                onclick="showMusic()"
+              />
+              <div class="footer-ex">Music</div>
+            </li>
+            <li>
+              <img
+                class="footer-img"
+                src="./images/mars.png"
+                alt="mars"
+                onclick="showMap()"
+              />
+              <div class="footer-ex">Map</div>
+            </li>
+            <li>
+              <img
+                class="footer-img"
+                src="./images/saturn.png"
+                alt="saturn"
+                onclick="showMovie()"
+              />
+              <div class="footer-ex">Movie</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
