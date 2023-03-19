@@ -1,0 +1,231 @@
+@import url(reset.css);
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body {
+  width: 16px;
+  height: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 0 0;
+  gap: 3rem;
+}
+
+.tablet-container {
+  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+  position: relative;
+  border-radius: 3rem;
+  border: 3rem solid #000;
+  width: 50rem;
+  height: 28rem;
+  background-image: url(./images/home.jpeg);
+}
+/* flex 속성 이용해서 space-between 으로 양쪽 끝으로 배치 */
+/* padding으로 상,좌,우 0.5rem 씩 간격 주기 */
+.header-conatiner {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+/* 1번, 2번 왼쪽 정렬 */
+.header-content:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.header-content:nth-child(2) {
+  margin-right: auto;
+}
+/* 3번, 4번 오른쪽 정렬 */
+.header-content:nth-child(3) {
+  margin-left: auto;
+}
+
+.header-content:nth-child(4) {
+  margin-left: 0.5rem;
+}
+.header-conatiner img{
+    width: 36px;
+    height: 18px;
+    /* background-color: #fff; */
+}
+.body-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  font-weight: 300;
+  overflow: scroll;
+  gap: 1rem;
+  padding: 0.5rem 0 0 0.5rem;
+  z-index: 100;
+  height: 93%;
+}
+.body-content1{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: #fff;
+    color: #000;
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.4s ease;
+}
+.body-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* background-color: #fff; */
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.4s ease;
+}
+.body-music{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    color: #000;
+    font-style: bold;
+    width: 15rem;
+    height: 15rem;
+    transition: all 0.4s ease;
+}
+audio{
+  width: 100%;
+}
+div.body-music {
+  background-color: #efefef;
+}
+.img{
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.cover-img{
+  min-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+
+}
+div.body-content1{
+    overflow: scroll;
+}
+div.body-photo{
+  overflow: scroll;
+}
+div.body-music{
+  overflow: scroll;
+}
+.body-content1:hover{
+  transform: scale(1.5);
+}
+.body-photo:hover{
+  transform: scale(1.5);
+}
+.body-music:hover{
+  transform: scale(1.2);
+}
+.body-map{
+  width: 100%;
+  height: 400px;
+}
+.body-btn{
+    width: 1.3rem;
+    height: 1.3rem;
+    position: fixed;
+    top: 9.5rem;
+    right: 10rem;
+    border-radius: 30%;
+    padding: 0;
+    text-align: center;
+    z-index: 999;
+}
+.map{
+  width: 100%;
+  height: 300px;
+}
+.box {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  z-index: 1;
+}
+.footer {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 2;
+}
+/* transfrom => 가운데 정렬 */
+.footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  z-index: 2;
+}
+
+.footer li {
+  margin: 0 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.footer-img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  /* background-color: #fff; */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  margin-left: 0.2rem;
+  z-index: 2;
+}
+
+.footer-img:hover {
+  transform: scale(1.2);
+  border: 2px solid #000;
+}
+.footer-ex{
+    color: #fff;
+    text-decoration: dotted;
+    padding:0.1rem 0 0 0.2rem;
+    text-align: center;
+}
+/* .footer-img{
+    width: 3rem;
+    height: 3rem;
+} */
+#noneDiv {
+    transition: all 1s ease; /* all은 모든 속성에 대해 transition 효과를 적용한다는 의미입니다. 1s는 transition 지속 시간을 나타냅니다. ease는 transition의 속도 곡선을 지정합니다. */
+  }
+  
