@@ -144,7 +144,7 @@ div.body-music {
   height: 400px;
 }
 .body-btn {
-  position: fixed;
+  position: absolute;
   width: 1.3rem;
   height: 1.3rem;
   padding: 0;
