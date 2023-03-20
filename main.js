@@ -19,11 +19,11 @@ function hideMusic(){
 	$('#music').hide();
 }
 
-function showMap() {
-	$('#map').show(); /* body-content를 보이게 합니다. */
+function showCamera() {
+	$('#camera').show(); /* body-content를 보이게 합니다. */
 }
-function hideMap(){
-	$('#map').hide();
+function hideCamera(){
+	$('#camera').hide();
 }
 
 function showMovie() {

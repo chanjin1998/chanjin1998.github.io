@@ -49,13 +49,14 @@
           </div>
         </div>
         <!-- Memo 섹션 -->
+        
         <div class="body-container" id="memo" style="display: none">
           <div class="body-content1">이름 : 정찬진</div>
           <div class="body-content1">생년월일 : 1998.06.29</div>
           <div class="body-content1">취미 : 음악듣기<br>&emsp;&emsp;&ensp;카페가기<br>&nbsp;&ensp;혼자여행가기</div>
           <div class="body-content1">MBTI : E(60%)<br>&emsp;&emsp;&emsp;S(55%)<br>&emsp;&emsp;&emsp;F(53%)<br>&emsp;&emsp;&emsp;P(68%)<br>ver.2023/03/19</div>
-          <div class="body-content1" style="padding: 1rem;">소프트웨어학과 4학년<br>열심히 하자!</div>
           <div class="body-content1">음악 취향 : Toil <br>&emsp;&nbsp;Charlie Puth <br>&emsp;&emsp;&emsp;&emsp;Lauv <br>&emsp;&emsp;&emsp;&emsp;Grio</div>
+          <div class="body-content1" style="padding: 1rem;">여기 앱에 있는<br>목록들은 전부<br>제 최애들이에요</div>
           <button class="body-btn" id="memo" onclick="hideMemo()">X</button>
         </div>
         <!-- Photo 섹션 -->
@@ -83,27 +84,57 @@
         <div class="body-container" id="music" style="display: none">
           <div class="body-music">
             <img class="cover-img" src="./images/music_page/toil.jpeg" alt="">
-            <h1 style="margin-top: 5px;">토일-끝말잇기</h1>
+            <h1 style="margin-top: 5px;">Toil-끝말잇기</h1>
             <audio controls>
               <source src="./audio/toil.mp3" type="audio/mp3">
             </audio>
           </div>
-          <div class="body-music"></div>
-          <div class="body-music"></div>
-          <div class="body-music"></div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/music_page/justin.jpeg" alt="">
+            <h1 style="margin-top: 5px;">Justin Bieber-What do you mean</h1>
+            <audio controls>
+              <source src="./audio/bieber.mp3" type="audio/mp3">
+            </audio>
+          </div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/music_page/lauv.jpeg" alt="">
+            <h1 style="margin-top: 5px;">Lauv-All 4 Nothing</h1>
+            <audio controls>
+              <source src="./audio/lauv.mp3" type="audio/mp3">
+            </audio>
+          </div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/music_page/benson.jpeg" alt="">
+            <h1 style="margin-top: 5px;">Benson Bonne-Sugar-Sweet</h1>
+            <audio controls>
+              <source src="./audio/benson.mp3" type="audio/mp3">
+            </audio>
+          </div>
           <button class="body-btn" id="music" onclick="hideMusic()">X</button>
         </div>
         <!-- Map 섹션 -->
-				<div class="body-container" id="map" style="display: none">
-          <div class="body-map" onload="initMap()"></div>
-					<button class="body-btn" id="map" onclick="hideMap()" style="position: relative; z-index: 999;">X</button>
+				<div class="body-container" id="camera" style="display: none">
+          <img src="./images/squid.jpeg" alt="">
+					<button class="body-btn" id="camera" onclick="hideCamera()">X</button>
 				</div>
         <!-- Movie 섹션 -->
 				<div class="body-container" id="movie" style="display: none">
-					<div class="body-content1"></div>
-					<div class="body-content1"></div>
-					<div class="body-content1"></div>
-					<div class="body-content1"></div>
+					<div class="body-music">
+            <img class="cover-img" src="./images/movie_page/movie1.jpeg" alt="">
+            <h1 style="margin-top: 5px;">어바웃 타임<br><br>★★★★★</h1>
+          </div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/movie_page/movie2.jpeg" alt="">
+            <h1 style="margin-top: 5px;">스즈메의 문단속<br><br>&emsp;★★★★★</h1>
+          </div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/movie_page/movie3.jpeg" alt="">
+            <h1 style="margin-top: 5px;">캐치 미 이프 유 캔<br><br>&emsp;★★★★☆</h1>
+          </div>
+          <div class="body-music">
+            <img class="cover-img" src="./images/movie_page/movie4.jpeg" alt="">
+            <h1 style="margin-top: 5px;">그 시절 우리가 좋아했던 소녀<br><br>&emsp;&emsp;&emsp;&ensp;★★★★★</h1>
+          </div>
 					<button class="body-btn" id="movie" onclick="hideMovie()">X</button>
 				</div>
         <div class="footer">
@@ -140,9 +171,9 @@
                 class="footer-img"
                 src="./images/mars.png"
                 alt="mars"
-                onclick="showMap()"
+                onclick="showCamera()"
               />
-              <div class="footer-ex">Map</div>
+              <div class="footer-ex">Self-Camera</div>
             </li>
             <li>
               <img

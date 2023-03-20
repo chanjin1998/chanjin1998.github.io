@@ -151,7 +151,7 @@ div.body-music{
     height: 1.3rem;
     position: fixed;
     top: 9.5rem;
-    right: 10rem;
+    right: 22rem;
     border-radius: 30%;
     padding: 0;
     text-align: center;
@@ -228,4 +228,3 @@ div.body-music{
 #noneDiv {
     transition: all 1s ease; /* all은 모든 속성에 대해 transition 효과를 적용한다는 의미입니다. 1s는 transition 지속 시간을 나타냅니다. ease는 transition의 속도 곡선을 지정합니다. */
   }
-  
