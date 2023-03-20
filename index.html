@@ -37,11 +37,11 @@
         </div>
         <!-- Memo 섹션 -->
         <div class="body-container" id="memo" style="display: none">
-          <div class="body-content1">이름 : 정찬진</div>
-          <div class="body-content1">생년월일 : 1998.06.29</div>
-          <div class="body-content1">취미 : 음악듣기<br>&emsp;&emsp;&ensp;카페가기<br>&nbsp;&ensp;혼자여행가기</div>
-          <div class="body-content1">MBTI : E(60%)<br>&emsp;&emsp;&emsp;S(55%)<br>&emsp;&emsp;&emsp;F(53%)<br>&emsp;&emsp;&emsp;P(68%)<br>ver.2023/03/19</div>
-          <div class="body-content1">음악 취향 : Toil <br>&emsp;&nbsp;Charlie Puth <br>&emsp;&emsp;&emsp;&emsp;Lauv <br>&emsp;&emsp;&emsp;&emsp;Grio</div>
+          <div class="body_content1" onclick="rotate()">이름</div>
+          <div class="body_content2" onclick="rotate1()">생년월일</div>
+          <div class="body_content3" onclick="rotate2()">취미</div>
+          <div class="body_content4" onclick="rotate3()">MBTI</div>
+          <div class="body_content5" onclick="rotate4()">음악 취향</div>
           <div class="body-content1" style="padding: 1rem;">여기 앱에 있는<br>목록들은 전부<br>제 최애들이에요</div>
           <button class="body-btn" id="memo" onclick="hideMemo()">X</button>
         </div>
@@ -98,9 +98,15 @@
           </div>
           <button class="body-btn" id="music" onclick="hideMusic()">X</button>
         </div>
-        <!-- Map 섹션 -->
-				<div class="body-container" id="camera" style="display: none">
-          <img src="./images/squid.jpeg" alt="squid" style="border-radius: 10%;">
+        <!-- Camera 섹션 -->
+				<div class="camera-container" id="camera" style="display: none">
+          <div class="camera"></div>
+          <img class="camera-angle" src="./images/camera.jpeg" alt="squid">
+          <div class="camera">
+            <div class="camera-btn"><div class="camera-rotate">↻</div></div>
+            <div class="camera-btn"><div class="camera-air">🔴</div></div>
+            <div class="camera-btn"><img class="camera-img" src="./images/movie_page/movie1.jpeg" alt=""></div>
+          </div>
 					<button class="body-btn" id="camera" onclick="hideCamera()">X</button>
 				</div>
         <!-- Movie 섹션 -->
