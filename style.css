@@ -78,6 +78,7 @@
   width: 10rem;
   height: 10rem;
   padding: 1rem;
+  border-radius: 10%;
   background-color: #fff;
   color: #000;
   justify-content: center;
@@ -98,7 +99,21 @@
   width: 15rem;
   height: 15rem;
   padding: 1rem;
-  color: #000;
+  color: #fff;
+  border-radius: 10%;
+  font-style: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.body-movie {
+  display: flex;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10%;
   font-style: bold;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +124,7 @@ audio {
   width: 100%;
 }
 div.body-music {
-  background-color: #efefef;
+  /* background-color: #efefef; */
 }
 .img {
   min-width: 100%;
@@ -137,6 +152,9 @@ div.body-music {
   transform: scale(1.5);
 }
 .body-music:hover {
+  transform: scale(1.2);
+}
+.body-movie:hover {
   transform: scale(1.2);
 }
 .body-map {
