@@ -13,31 +13,30 @@
 }
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 4rem 0 0 0;
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
-
 .tablet-container {
   box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
   position: relative;
-  border-radius: 3rem;
-  border: 3rem solid #000;
   width: 50rem;
   height: 28rem;
+  border-radius: 3rem;
+  border: 3rem solid #000;
   background-image: url(./images/home.jpeg);
 }
 /* flex 속성 이용해서 space-between 으로 양쪽 끝으로 배치 */
 /* padding으로 상,좌,우 0.5rem 씩 간격 주기 */
 .header-conatiner {
   display: flex;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.5rem 0.5rem 0 0.5rem;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* 1번, 2번 왼쪽 정렬 */
@@ -51,113 +50,111 @@
 .header-content:nth-child(3) {
   margin-left: auto;
 }
-
 .header-content:nth-child(4) {
   margin-left: 0.5rem;
 }
-.header-conatiner img{
-    width: 36px;
-    height: 18px;
-    /* background-color: #fff; */
+.header-conatiner img {
+  width: 36px;
+  height: 18px;
+  /* background-color: #fff; */
 }
 .body-container {
-  position: relative;
   display: flex;
+  position: relative;
+  height: 93%;
+  padding: 0.5rem 0 0 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 300;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  color: #fff;
-  background-color: #000;
-  font-weight: 300;
   overflow: scroll;
   gap: 1rem;
-  padding: 0.5rem 0 0 0.5rem;
   z-index: 100;
-  height: 93%;
 }
-.body-content1{
-  padding: 1rem;
+.body-content1 {
   display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: #000;
   justify-content: center;
   align-items: center;
-    background-color: #fff;
-    color: #000;
-    width: 10rem;
-    height: 10rem;
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.body-photo{
+.body-photo {
   display: flex;
+  /* background-color: #fff; */
+  width: 10rem;
+  height: 10rem;
   justify-content: center;
   align-items: center;
-    /* background-color: #fff; */
-    width: 10rem;
-    height: 10rem;
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.body-music{
-  padding: 1rem;
+.body-music {
   display: flex;
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  color: #000;
+  font-style: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    color: #000;
-    font-style: bold;
-    width: 15rem;
-    height: 15rem;
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-audio{
+audio {
   width: 100%;
 }
 div.body-music {
   background-color: #efefef;
 }
-.img{
+.img {
   min-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
-.cover-img{
+.cover-img {
   min-width: 100%;
   max-height: 80%;
   object-fit: contain;
-
 }
-div.body-content1{
-    overflow: scroll;
-}
-div.body-photo{
+div.body-content1 {
   overflow: scroll;
 }
-div.body-music{
+div.body-photo {
   overflow: scroll;
 }
-.body-content1:hover{
+div.body-music {
+  overflow: scroll;
+}
+.body-content1:hover {
   transform: scale(1.5);
 }
-.body-photo:hover{
+.body-photo:hover {
   transform: scale(1.5);
 }
-.body-music:hover{
+.body-music:hover {
   transform: scale(1.2);
 }
-.body-map{
+.body-map {
   width: 100%;
   height: 400px;
 }
-.body-btn{
-    width: 1.3rem;
-    height: 1.3rem;
-    position: fixed;
-    top: 9.5rem;
-    right: 22rem;
-    border-radius: 30%;
-    padding: 0;
-    text-align: center;
-    z-index: 999;
+.body-btn {
+  position: fixed;
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 0;
+  border-radius: 30%;
+  top: 9.5rem;
+  right: 22rem;
+  text-align: center;
+  z-index: 999;
 }
-.map{
+.map {
   width: 100%;
   height: 300px;
 }
@@ -168,9 +165,9 @@ div.body-music{
   z-index: 1;
 }
 .footer {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 1rem;
   position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
   bottom: 0%;
   width: 80%;
   left: 50%;
@@ -179,18 +176,18 @@ div.body-music{
 }
 /* transfrom => 가운데 정렬 */
 .footer ul {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
   justify-content: center;
   z-index: 2;
 }
 
 .footer li {
+  display: flex;
   margin: 0 10px;
   padding: 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
@@ -203,9 +200,9 @@ div.body-music{
   /* background-color: #fff; */
   border: 2px solid #fff;
   border-radius: 50%;
+  color: #333;
   text-align: center;
   text-decoration: none;
-  color: #333;
   transition: all 0.3s ease-in-out;
   margin-left: 0.2rem;
   z-index: 2;
@@ -215,16 +212,16 @@ div.body-music{
   transform: scale(1.2);
   border: 2px solid #000;
 }
-.footer-ex{
-    color: #fff;
-    text-decoration: dotted;
-    padding:0.1rem 0 0 0.2rem;
-    text-align: center;
+.footer-ex {
+  padding: 0.1rem 0 0 0.2rem;
+  color: #fff;
+  text-decoration: dotted;
+  text-align: center;
 }
 /* .footer-img{
     width: 3rem;
     height: 3rem;
 } */
 #noneDiv {
-    transition: all 1s ease; /* all은 모든 속성에 대해 transition 효과를 적용한다는 의미입니다. 1s는 transition 지속 시간을 나타냅니다. ease는 transition의 속도 곡선을 지정합니다. */
-  }
+  transition: all 1s ease; /* all은 모든 속성에 대해 transition 효과를 적용한다는 의미입니다. 1s는 transition 지속 시간을 나타냅니다. ease는 transition의 속도 곡선을 지정합니다. */
+}
