@@ -85,6 +85,66 @@
   align-items: center;
   transition: all 0.4s ease;
 }
+.body_content1 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.body_content2 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.body_content3 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.body_content4 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.body_content5 {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
 .body-photo {
   display: flex;
   /* background-color: #fff; */
@@ -136,7 +196,7 @@ div.body-music {
   max-height: 80%;
   object-fit: contain;
 }
-div.body-content1 {
+/* div.body-content1 {
   overflow: scroll;
 }
 div.body-photo {
@@ -144,10 +204,11 @@ div.body-photo {
 }
 div.body-music {
   overflow: scroll;
-}
-.body-content1:hover {
+} */
+
+/* .body-content1:hover {
   transform: scale(1.5);
-}
+} */
 .body-photo:hover {
   transform: scale(1.5);
 }
@@ -176,12 +237,65 @@ div.body-music {
   width: 100%;
   height: 300px;
 }
-.box {
+.camera-container {
+  display: flex;
+  position: relative;
+  height: 94%;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  font-weight: 300;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: scroll;
+  z-index: 100;
+}
+.camera{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0,0,0);
+  justify-content: center;
+  align-items: center;
+  flex: 1.5;
+  gap: 4rem;
+}
+.camera-angle{
+  flex:7;
+  height: 100%;
+}
+.camera-btn{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.camera-air{
+  font-size: 1.3rem;
+  color: #000;
+  translate: 0.3 ease;
+}
+.camera-air:hover{
+  transform: scale(1.2);
+}
+.camera-rotate{
+  font-size: 2rem;
+  color: #000;
+}
+.camera-img{
+  border-radius: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* .box {
   width: 3rem;
   height: 3rem;
   background-color: #fff;
   z-index: 1;
-}
+} */
 .footer {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
